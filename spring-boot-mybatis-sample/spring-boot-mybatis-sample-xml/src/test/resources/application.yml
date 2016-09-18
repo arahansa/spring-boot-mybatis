@@ -15,6 +15,6 @@ spring.datasource.driver-class-name: com.mysql.jdbc.Driver
 
 logging:
   level:
-    org.springframework.boot: DEBUG
-    sample.springboot.mybatis: DEBUG
+    org.springframework.boot: INFO
+    sample.springboot.mybatis: INFO
   

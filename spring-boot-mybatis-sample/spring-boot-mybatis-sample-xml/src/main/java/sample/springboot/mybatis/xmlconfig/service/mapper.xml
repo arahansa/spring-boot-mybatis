@@ -9,6 +9,22 @@
 	<select id="findById" resultType="sample.springboot.mybatis.xmlconfig.service.Member">
 		SELECT ID, NAME, PHONE FROM MEMBER WHERE ID = #{id}
 	</select>
-  
+
+
+	<select id="findAllMap" resultType="Map">
+		SELECT ID, NAME, PHONE FROM MEMBER
+	</select>
+
+	<select id="findAllString" resultType="Map">
+		SELECT ID, NAME, PHONE FROM MEMBER
+	</select>
+
+	<insert id="saveMember" parameterType="sample.springboot.mybatis.xmlconfig.service.Member">
+		INSERT INTO MEMBER (ID, NAME, PHONE) VALUES (#{id}, #{name}, #{phone})
+	</insert>
+
+	<delete id="deleteMember">
+		DELETE FROM MEMBER
+	</delete>
 </mapper>
 

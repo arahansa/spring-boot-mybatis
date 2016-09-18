@@ -44,14 +44,7 @@ $ mvn -pl spring-boot-mybatis-sample-groovy spring-boot:run
 - spring-boot-mybatis-sample-default
 	- 기본적이 설정이 없을 때 작동하는 예제
 	- 기본적인 설정 Annotation을 사용
-- spring-boot-mybatis-sample-simple
-	- 가장 간단하게 DB에 접근할 수 있도록 하나의 Class에서 작동하는 예제 
+
 - spring-boot-mybatis-sample-xml
 	- XML mapper를 사용하여 작동하는 예제
 	- 기본적인 XML 설정 필요
-- spring-boot-mybatis-sample-hybrid
-	- 기본 Annotation 형태와 XML형태를 동시에 사용하도록 작동하는 예제 
-	- 단지 테스트형태이며 실무에서는 지양필요
-- spring-boot-mybatis-sample-groovy
-	- 기본 Annotation 형태는 XML형태에서 Multiline이 되지 않기 때문에 Groovy의 '''문자열''' 기능을 사용하여 멀티라인 문자열을 구현 하여 쿼리를 편리하게 작성할 수 있도록 구성된 예제
-	- 이 부분은 Spring Boot MyBatis와 관계없이 작동하는 예제

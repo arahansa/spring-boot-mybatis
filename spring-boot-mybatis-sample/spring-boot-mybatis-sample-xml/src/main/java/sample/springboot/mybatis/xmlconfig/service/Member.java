@@ -1,5 +1,7 @@
 package sample.springboot.mybatis.xmlconfig.service;
 
+import java.util.Date;
+
 /**
  * Sample DTO
  * 
@@ -10,6 +12,7 @@ public class Member {
 	private Long id;
 	private String name;
 	private String phone;
+	private Date creationtime;
 	
 	public Long getId() {
 		return id;
@@ -29,7 +32,15 @@ public class Member {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	
+
+	public Date getCreationtime() {
+		return creationtime;
+	}
+
+	public void setCreationtime(Date creationtime) {
+		this.creationtime = creationtime;
+	}
+
 	@Override
 	public String toString() {
 		return "Member [id=" + id + ", name=" + name + ", phone=" + phone + "]";
